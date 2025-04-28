@@ -10,22 +10,34 @@
     width: 100%;
    }
 
-   .background{
+ 
+
+   .background {
+    position: relative;
+    
     background-image: url('./images/mainImg.jpg');
-    background-size: 100%;  /* 70% width, auto height */
-    background-position: center center;  /* center the image */
+    background-size: 70% auto; /* Set width to 70% and auto height */
+    background-position: center -10%; /* Center horizontally and move 20% upwards */
     background-repeat: no-repeat;
     width: 100%;
-    height: 100%; /* full screen height */
-    position: relative;
-   }
+    height: 100%;
+  }
+  .h1 {
+    position: absolute; 
+    top: 40%;  
+    left: 50%; 
+    transform: translate(-50%, -50%); 
+    color: white; 
+    text-align: center; 
+    z-index: 10; 
+  }
+  .h1 h1{
+   font-weight: 600;
+    font-size: 50px;
+  }
+  
 
 
-   /* .nav-image{
-    width: 70%;
-    display: block;
-    margin:0 auto;
-   } */
 
 
     nav{
@@ -77,9 +89,9 @@
           text-align: center;
           padding: 10px 0;
           list-style: none;
-        
           overflow: hidden;
-          color: black;       
+          color: black;  
+          z-index: 50;     
         }
       
         nav ul li {
@@ -99,5 +111,16 @@
         #menuList{
             transition: all 0.5s;
         }
+
+        .h1 {
+            position: absolute; 
+            top: 50%;  
+            left: 50%; 
+            transform: translate(-50%, -50%); 
+            font-size: 2rem;  
+            color: white; 
+            text-align: center; 
+            z-index: 10; 
+          }
       }
       
